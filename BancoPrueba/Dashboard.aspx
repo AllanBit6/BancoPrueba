@@ -3,9 +3,7 @@
 
 <asp:Content ID="MainContentBlock" ContentPlaceHolderID="MainContent" runat="server">
     <section class="welcome-panel">
-        <p class="eyebrow">Panel principal</p>
-        <h1>Bienvenido a BancoPrueba</h1>
-        <p class="lead">Administra usuarios, cuentas y consultas desde un unico lugar.</p>
+        <h1>Bienvenido</h1>
     </section>
 
     <section class="dashboard-section" aria-labelledby="quickLinksTitle">
