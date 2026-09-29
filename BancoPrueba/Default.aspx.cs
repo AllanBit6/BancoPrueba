@@ -11,7 +11,8 @@ namespace BancoPrueba
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Dashboard.aspx", false);
+            Context.ApplicationInstance.CompleteRequest();
         }
     }
 }

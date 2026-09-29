@@ -26,8 +26,8 @@
         <h3>Resumen</h3>
         <p>Nombre: <asp:Label ID="lblNombreCompleto" runat="server" /></p>
         <p>Saldo actual: <asp:Label ID="lblSaldoActual" runat="server" /></p>
-        <p>Total créditos: <asp:Label ID="lblTotalCreditos" runat="server" /></p>
-        <p>Total débitos: <asp:Label ID="lblTotalDebitos" runat="server" /></p>
+        <p>Total creditos: <asp:Label ID="lblTotalCreditos" runat="server" /></p>
+        <p>Total debitos: <asp:Label ID="lblTotalDebitos" runat="server" /></p>
     </section>
 
     <section class="mt-4">

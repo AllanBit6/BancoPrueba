@@ -1,4 +1,6 @@
 # Copilot Instructions
 
 ## Directrices del proyecto
-- Para esta aplicación BancoPrueba, mantener ASP.NET Web Forms con C# y .NET Framework 4.8, usar ADO.NET (SqlConnection, SqlCommand, SqlParameter), ejecutar procedimientos almacenados existentes, no usar Entity Framework ni concatenar SQL, aplicar try/catch y using para conexiones, y conservar una estructura limpia por capas.
+- Para esta aplicación BancoPrueba, mantener ASP.NET Web Forms con C# y .NET Framework 4.8; conservar ADO.NET (SqlConnection, SqlCommand, SqlParameter), ejecutar procedimientos almacenados existentes, no usar Entity Framework ni concatenar SQL; emplear using y manejo de excepciones y respetar una estructura por capas. En la limpieza, no cambiar base de datos ni Stored Procedures. Además, actualizar el proyecto a .NET Framework 4.8 (desde 4.7.2) para la limpieza de BancoPrueba.
+- Para conectar el menú, reutilizar los procedimientos almacenados existentes con sus contratos: sp_ActualizarEstadoUsuario(@UsuarioID INT, @Estado BIT), sp_ReporteTopUsuarios(@DiasAtras INT), sin modificar la base de datos ni los procedimientos. El usuario prefiere cambios mínimos y limitados a lo necesario.
+- Para los textos visibles de BancoPrueba, quitar las tildes/diacríticos de las palabras para mantener uniformidad visual; conservar identificadores, nombres de procedimientos y código no visible.

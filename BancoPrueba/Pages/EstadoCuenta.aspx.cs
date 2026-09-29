@@ -19,19 +19,19 @@ namespace BancoPrueba
 
             if (!int.TryParse(txtCuentaID.Text.Trim(), out cuentaID) || cuentaID <= 0)
             {
-                lblMensaje.Text = "Ingrese un CuentaID válido.";
+                lblMensaje.Text = "Ingrese un CuentaID valido.";
                 return;
             }
 
             if (!DateTime.TryParseExact(txtFechaInicio.Text, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out fechaInicio))
             {
-                lblMensaje.Text = "Ingrese una fecha inicial válida.";
+                lblMensaje.Text = "Ingrese una fecha inicial valida.";
                 return;
             }
 
             if (!DateTime.TryParseExact(txtFechaFin.Text, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out fechaFin))
             {
-                lblMensaje.Text = "Ingrese una fecha final válida.";
+                lblMensaje.Text = "Ingrese una fecha final valida.";
                 return;
             }
 
@@ -89,7 +89,7 @@ namespace BancoPrueba
                 gvDetalle.DataBind();
                 lblMensaje.Text = tieneResumen
                     ? "Consulta completada."
-                    : "No se encontró un resumen para la cuenta indicada.";
+                    : "No se encontro un resumen para la cuenta indicada.";
             }
             catch (SqlException ex)
             {
